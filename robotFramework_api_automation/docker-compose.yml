@@ -1,0 +1,10 @@
+version: '3'
+services:
+  robotframework:
+    image: robotframework
+    container_name: robotframework
+    volumes:
+      - ./prezo/specs:/opt/robotframework/tests
+      - ./results:/opt/robotframework/results
+      - ./prezo:/home/prezo
+    command: robot --outputdir /opt/robotframework/results /home/prezo/specs 
