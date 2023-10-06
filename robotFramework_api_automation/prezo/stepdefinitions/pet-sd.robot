@@ -25,8 +25,8 @@ Add pet
     ${response}=        POST On Session        export        url=${ADD_PET_PATH}        data=${body}        headers=${HEADERS}
     Should Be Equal As Strings      ${response.status_code}     200
     #Log  "response_data ${response}"  console=True
-    ${schema_file}=   Get File  resources/jsonschemas/allergies/json_allergies_menu.json
-    Element should exist  ${schema_file}  .allergies
+    ${schema_file}=   Get File  resources/jsonschemas/pet/json-add-pet.json
+    Element should exist  ${schema_file}  .id
     ${response_data}  Convert To String  ${response.content}
     ##Log  "response_data ${response_data}"  console=True
     Validate Json Schema  ${response_data}  ${schema_file}

@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": [
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "default": 17,
+      "examples": [
+        888
+      ]
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "default": 5,
+          "examples": [
+            10
+          ]
+        },
+        "name": {
+          "type": "string",
+          "default": "Criollo",
+          "examples": [
+            "Criollo"
+          ]
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "default": "Mona",
+      "examples": [
+        "Mona"
+      ]
+    },
+    "photoUrls": {
+      "type": "array",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "default": 17,
+            "examples": [
+              17
+            ]
+          },
+          "name": {
+            "type": "string",
+            "default": "Mona-Garcia",
+            "examples": [
+              "Mona-Garcia"
+            ]
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "default": "available",
+      "examples": [
+        "available"
+      ]
+    }
+  }
+}
