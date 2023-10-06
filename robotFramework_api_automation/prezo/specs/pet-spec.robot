@@ -5,13 +5,13 @@ Library               JSONLibrary
 Library               OperatingSystem
 
 Resource    ../../prezo/configuration/configuration-dev.robot
-Resource    ../../prezo/stepdefinitions/login-sd.robot
+Resource    ../../prezo/stepdefinitions/pet-sd.robot
 
 #Suite Setup      setup my_api session
 
 *** Variables ***
       
 ***Test Cases***
-Post Login PREZO
-    [Tags]  Post
-    Post Login
+Post Add pet
+    [Tags]  pet
+    Add pet
