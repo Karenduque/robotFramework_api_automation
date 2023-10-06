@@ -1,0 +1,8 @@
+
+robotframework
+robotframework-jsonvalidator
+robotframework-jsonlibrary
+robotframework-requests
+robotframework-dependencylibrary
+pip3 install robotframework-requests
+pip

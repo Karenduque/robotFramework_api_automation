@@ -28,6 +28,8 @@ pip3 install robotframework-requests
 robot TC1.robot
 Go to specs robot --outputdir ../../results TC1.robot
 
+To run: robot --include allergies --outputdir results specs
+
 ```
 
 This will execute the tests and generate a html report in ```/PREZO_API_AUTOMATION/prezo/results/report.html`` folder.

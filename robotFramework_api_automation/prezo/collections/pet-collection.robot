@@ -11,6 +11,8 @@ Library             OperatingSystem
 
 *** Variables ***
 #ENDPOINTS              ---
-${LOGIN_PATH}                /login
+${UPLOAD_IMAGE_PATH}    /pet/${ID_PET}/uploadImage
 #LOOP COUNTER           ---
 ${COUNTER}              ${1}
+${ID_PET}
+${ADD_PET_PATH}    /pet

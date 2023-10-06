@@ -1,8 +1,9 @@
 *** Settings ***
 
 *** Variables ***
-${BASE_URL}    
-${AUTH}                 /auth
+${BASE_URL}    https://petstore.swagger.io/
+${VERSION}    /v2
+${AUTH}    /auth
 ${BEARER_TOKEN}  
 #HEADERS                ---
 ${CONTENT_TYPE}         application/json
